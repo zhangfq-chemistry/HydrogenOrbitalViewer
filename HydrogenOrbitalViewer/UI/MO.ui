@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MOForm</class>
+ <widget class="QDialog" name="MOForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>385</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Molecule Orbital</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="11" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>z</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_z"/>
+     </item>
+    </layout>
+   </item>
+   <item row="11" column="1">
+    <widget class="QPushButton" name="pushButton_close">
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QTextEdit" name="MO_textEdit">
+     <property name="tabChangesFocus">
+      <bool>true</bool>
+     </property>
+     <property name="acceptRichText">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>y</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_y"/>
+     </item>
+    </layout>
+   </item>
+   <item row="5" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_x"/>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>H</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>He</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Li</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Be</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>N</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_orb">
+       <item>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1S</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2S</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2Px</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2Py</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2Pz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3S</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3Px</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3Py</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3Pz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3Dxy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3Dxz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3Dyz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3Dx2-y2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3Dz2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4S</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Px</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Py</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Pz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Dxy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Dxz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Dyz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Dxy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Dxz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Dyz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Dx2-y2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4Dz2</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_addAtom">
+       <property name="text">
+        <string>Add Atom</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="pushButton_import">
+     <property name="text">
+      <string>Import</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="pushButton_centralize">
+     <property name="text">
+      <string>Centeralize</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="pushButton_reset">
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Orbital Coefficient</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_coeff"/>
+     </item>
+    </layout>
+   </item>
+   <item row="8" column="1">
+    <widget class="QPushButton" name="pushButton_addMolecule">
+     <property name="text">
+      <string>Add Molecule</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

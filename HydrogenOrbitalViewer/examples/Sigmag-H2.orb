@@ -1,0 +1,5 @@
+Name Sigma-g of H2
+# the orbital coefficient need not normalized
+#  atom      x         y        z    orbital-coefficient  orbital
+    H       -2   0.0  0.0     1.0    1S
+    H        2   0.0  0.0     1.0    1S

@@ -1,0 +1,8 @@
+uic-qt5 ./UI/mainwindow.ui  -o ui_mainwindow.h
+uic-qt5 ./UI/AOProperty.ui  -o ui_AOProperty.h
+qmake
+rm  ./HAO-Viewer
+make -j8
+./HAO-Viewer
+
+

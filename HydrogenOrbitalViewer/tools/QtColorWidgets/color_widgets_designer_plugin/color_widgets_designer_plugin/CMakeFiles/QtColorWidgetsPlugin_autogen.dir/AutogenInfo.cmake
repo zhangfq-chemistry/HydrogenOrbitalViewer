@@ -1,0 +1,35 @@
+# Meta
+set(AM_MULTI_CONFIG "FALSE")
+set(AM_PARALLEL "4")
+set(AM_VERBOSITY "")
+# Directories
+set(AM_CMAKE_SOURCE_DIR "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets")
+set(AM_CMAKE_BINARY_DIR "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin")
+set(AM_CMAKE_CURRENT_SOURCE_DIR "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin")
+set(AM_CMAKE_CURRENT_BINARY_DIR "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_widgets_designer_plugin")
+set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
+set(AM_BUILD_DIR "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_widgets_designer_plugin/QtColorWidgetsPlugin_autogen")
+set(AM_INCLUDE_DIR "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_widgets_designer_plugin/QtColorWidgetsPlugin_autogen/include")
+# Files
+set(AM_SOURCES "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_2d_slider_plugin.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_line_edit_plugin.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_list_plugin.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_palette_widget_plugin.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_preview_plugin.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_selector_plugin.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_wheel_plugin.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_widget_plugin_collection.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/gradient_slider_plugin.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/hue_slider_plugin.cpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/swatch_plugin.cpp")
+set(AM_HEADERS "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_2d_slider_plugin.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_line_edit_plugin.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_list_plugin.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_palette_widget_plugin.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_preview_plugin.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_selector_plugin.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_wheel_plugin.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_widget_plugin_collection.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/gradient_slider_plugin.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/hue_slider_plugin.hpp;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/swatch_plugin.hpp")
+set(AM_SETTINGS_FILE "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin/color_widgets_designer_plugin/CMakeFiles/QtColorWidgetsPlugin_autogen.dir/AutogenOldSettings.txt")
+# Qt
+set(AM_QT_VERSION_MAJOR 5)
+set(AM_QT_MOC_EXECUTABLE "/usr/lib64/qt5/bin/moc")
+set(AM_QT_UIC_EXECUTABLE "/usr/lib64/qt5/bin/uic")
+# MOC settings
+set(AM_MOC_SKIP "")
+set(AM_MOC_DEFINITIONS "QT_CORE_LIB;QT_DESIGNER_LIB;QT_GUI_LIB;QT_NO_DEBUG;QT_UIPLUGIN_LIB;QT_WIDGETS_LIB;QT_XML_LIB;QtColorWidgetsPlugin_EXPORTS")
+set(AM_MOC_INCLUDES "/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/include;/home/zhangfq/Method-II/HydrogenOrbitalViewer/colorPicker/Qt-Color-Widgets/color_widgets_designer_plugin;/usr/include/qt5;/usr/include/qt5/QtDesigner;/usr/include/qt5/QtUiPlugin;/usr/include/qt5/QtWidgets;/usr/include/qt5/QtGui;/usr/include/qt5/QtCore;/usr/lib64/qt5/./mkspecs/linux-g++;/usr/include/qt5/QtXml;/usr/include;/opt/intel/compilers_and_libraries_2019.0.117/linux/ipp/include;/opt/intel/compilers_and_libraries_2019.0.117/linux/mkl/include;/opt/intel/compilers_and_libraries_2019.0.117/linux/pstl/include;/opt/intel/compilers_and_libraries_2019.0.117/linux/tbb/include;/opt/intel/compilers_and_libraries_2019.0.117/linux/daal/include;/opt/intel/clck/2019.0/include;/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0;/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/x86_64-pc-linux-gnu;/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward;/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include;/usr/local/include;/usr/local/lib/gcc/x86_64-pc-linux-gnu/9.1.0/include-fixed")
+set(AM_MOC_OPTIONS "")
+set(AM_MOC_RELAXED_MODE "")
+set(AM_MOC_MACRO_NAMES "Q_OBJECT;Q_GADGET;Q_NAMESPACE")
+set(AM_MOC_DEPEND_FILTERS "")
+set(AM_MOC_PREDEFS_CMD "/usr/local/bin/c++;-dM;-E;-c;/usr/local/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp")
+# UIC settings
+set(AM_UIC_SKIP "")
+set(AM_UIC_TARGET_OPTIONS "")
+set(AM_UIC_OPTIONS_FILES "")
+set(AM_UIC_OPTIONS_OPTIONS "")
+set(AM_UIC_SEARCH_PATHS "")

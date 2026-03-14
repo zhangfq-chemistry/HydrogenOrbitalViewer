@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=
+includedir=${prefix}/include
+
+Name: QtColorWidgets
+Description: Color wheel widget and dialog for Qt
+Version: 2.0.0
+Libs: -L${libdir} -lQtColorWidgets-Qt52
+Cflags: -I${includedir}/QtColorWidgets -I${includedir}

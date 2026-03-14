@@ -1,0 +1,12 @@
+#include <QTime>
+#include <iostream>
+#include <QtGlobal>
+using namespace std;
+main()
+{
+    QTime time;
+	time    = QTime::currentTime();
+    qsrand(time.msec()*qrand()*qrand()*qrand()*qrand()*qrand()*qrand());	
+    for(long int i=0;i<NP*4+1;i++)
+    {randnum[i]=(qrand()%10000)/10000;cout<<randnum[i];cout<<endl;}
+}

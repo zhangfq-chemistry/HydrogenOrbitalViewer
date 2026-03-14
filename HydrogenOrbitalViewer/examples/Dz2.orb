@@ -1,0 +1,6 @@
+Name Dz2
+Proj XOZ
+# the orbital coefficient need not normalized
+#  atom      x         y        z    orbital-coefficient  orbital
+    H       0.0   0.0  6.     1.0    3Dz2
+    H        0.0   0.0  -6.     1.0   3Dz2

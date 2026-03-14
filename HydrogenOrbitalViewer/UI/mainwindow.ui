@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1142</width>
+    <height>748</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AtomOrbital</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_mdi">
+       <attribute name="title">
+        <string>Orbital</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QMdiArea" name="mdiArea"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_rf">
+       <attribute name="title">
+        <string>Radial Function</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="checkBox_RDF">
+            <property name="text">
+             <string>RDF</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="checkBox_R">
+            <property name="text">
+             <string>R</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QCheckBox" name="checkBox_R2">
+            <property name="text">
+             <string>R2</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="RadialFunViewer" name="RDFViewer" native="true"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1142</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionFileOpen"/>
+    <addaction name="actionFileClose"/>
+    <addaction name="actionSave_PNG"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionPsi3D_Active"/>
+    <addaction name="actionPsi3DProj_Active"/>
+    <addaction name="actionRadial_Active"/>
+    <addaction name="separator"/>
+    <addaction name="actionChangeColor"/>
+   </widget>
+   <widget class="QMenu" name="menuwindows">
+    <property name="title">
+     <string>Windows</string>
+    </property>
+    <addaction name="actionCascade"/>
+    <addaction name="actionTitles"/>
+   </widget>
+   <widget class="QMenu" name="menuToosBar">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionbuild_Molecular_Orbital"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuToosBar"/>
+   <addaction name="menuwindows"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_right">
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>217</height>
+    </size>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_5">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>           Atomic Orbital </string>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>171</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="spinBox_l"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_39">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>l</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_36">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>n</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QSpinBox" name="spinBox_n"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_40">
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>m</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QCheckBox" name="checkBox_quadMesh">
+         <property name="text">
+          <string>quadMesh</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="spinBox_m"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_addOrbital">
+         <property name="font">
+          <font>
+           <family>Cantarell</family>
+           <pointsize>11</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QComboBox" name="comboBox_OB_cossin">
+         <item>
+          <property name="text">
+           <string>none</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>   cos</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>   sin</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>181</width>
+        <height>64</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_psi">
+         <property name="text">
+          <string>Psi</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="comboBox_typeR">
+         <item>
+          <property name="text">
+           <string>Hydrogenoid</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Coulomb-Sturmian</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>AO</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="comboBox_AOrbital">
+         <item>
+          <property name="text">
+           <string>1S</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2S</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2Px</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2Py</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2Pz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3S</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3Px</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3Py</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3Pz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3Dxy</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3Dyz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3Dxz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3Dx2-y2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3Dz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4S</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Px</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Py</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Pz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Dxy</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Dyz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Dxz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Dx2-y2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Dz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Fz3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Fxz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Fyz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Fz(x2-y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Fxyz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Fx(x2-3y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4Fy(3x2-y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5S</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Px</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Py</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Pz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Dxy</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Dyz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Dxz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Dx2-y2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Dz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Fz3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Fxz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Fyz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Fz(x2-y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Fxyz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Fx(x2-3y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Fy(3x2-y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Gz4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Gxz3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Gyz3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Gx3z</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Gy3z</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Gxyz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5G(x2-y2)z2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5Gxy(x2-y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5G(x4+y4)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6S</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Px</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Py</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Pz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Dxy</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Dxz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Dxz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Dx2-y2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Dz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Fz3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Fxz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Fyz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Fz(x2-y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Fxyz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Fx(x2-3y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Fy(3x2-y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Gz4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Gxz3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Gyz3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Gx3z</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Gy3z</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6G(x2-y2)z2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Gxy(x2-y2)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6G(x4+y4)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6Gxyz2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SP</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SP2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SP3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DSP2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DSP3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>D2SP3</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>191</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>            Orbital Type  </string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>30</y>
+        <width>181</width>
+        <height>190</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_10">
+       <item row="3" column="2">
+        <widget class="QCheckBox" name="checkBox_OB_xoy">
+         <property name="contextMenuPolicy">
+          <enum>Qt::NoContextMenu</enum>
+         </property>
+         <property name="text">
+          <string>xoy</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="checkBox_OB_positive">
+         <property name="text">
+          <string>positive</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QCheckBox" name="checkBox_OB_xoz">
+         <property name="text">
+          <string>xoz</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QCheckBox" name="checkBox_OB_negative">
+         <property name="text">
+          <string>negative</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QCheckBox" name="checkBox_OB_corner">
+         <property name="text">
+          <string>corner</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QCheckBox" name="checkBox_OB_yoz">
+         <property name="text">
+          <string>yoz</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QCheckBox" name="checkBox_OB_smooth">
+         <property name="text">
+          <string>smooth</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="checkBox_OB_mesh">
+         <property name="text">
+          <string>mesh</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QCheckBox" name="checkBox_OB_quarter">
+         <property name="text">
+          <string>quarter</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="checkBox_OB_widge">
+         <property name="text">
+          <string>wedge</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QPushButton" name="pushButton_OL_color">
+         <property name="text">
+          <string>color-Lobe</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QPushButton" name="pushButton_ON_color">
+         <property name="text">
+          <string>color-Node</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>450</y>
+       <width>191</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>            Node  Type</string>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>181</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="checkBox_NT_Radial">
+         <property name="text">
+          <string>radial</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_NT_angular">
+         <property name="text">
+          <string>angular</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_left">
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>159</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>220</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>181</width>
+       <height>681</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="2" column="0">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="2" column="1">
+         <widget class="QPushButton" name="pushButton_clockwise">
+          <property name="text">
+           <string>Clock</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Align</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_YZ">
+          <property name="text">
+           <string>YOZ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pushButton_counterclockwise">
+          <property name="text">
+           <string>Aclock</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_XY">
+          <property name="text">
+           <string>XOY</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="pushButton_Down">
+          <property name="text">
+           <string>Down</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButton_XZ">
+          <property name="text">
+           <string>XOZ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Rotate</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="pushButton_Up">
+          <property name="text">
+           <string>Up</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QSpinBox" name="spinBox_angle">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="pushButton_restView">
+          <property name="text">
+           <string>Reset</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="pushButton_right">
+          <property name="text">
+           <string>--&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="pushButton_left">
+          <property name="text">
+           <string>&lt;--</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <widget class="FileTree" name="treeWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>1000</height>
+         </size>
+        </property>
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>true</bool>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::ActionsContextMenu</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string notr="true">1</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/copy.png</normaloff>../images/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as...</string>
+   </property>
+  </action>
+  <action name="actionAlignView_Xy">
+   <property name="text">
+    <string>Align to x/y</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionAlignView_Xz">
+   <property name="text">
+    <string>Align to x/z</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionAlignView_Yz">
+   <property name="text">
+    <string>Align to y/z</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About...</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>DejaVu Sans</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionSave_Png">
+   <property name="text">
+    <string>Save Png</string>
+   </property>
+  </action>
+  <action name="actionSave_Gif">
+   <property name="text">
+    <string>Save Gif</string>
+   </property>
+  </action>
+  <action name="actionPsi3D_Active">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/Isosurface.png</normaloff>../images/Isosurface.png</iconset>
+   </property>
+   <property name="text">
+    <string>3D</string>
+   </property>
+  </action>
+  <action name="actionPsi3DProj_Active">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/mesh2.png</normaloff>../images/mesh2.png</iconset>
+   </property>
+   <property name="text">
+    <string>3D-Projection</string>
+   </property>
+  </action>
+  <action name="actionRadial_Active">
+   <property name="text">
+    <string>Radial Functions</string>
+   </property>
+  </action>
+  <action name="actionYlm">
+   <property name="text">
+    <string>Ylm</string>
+   </property>
+  </action>
+  <action name="actionCascade">
+   <property name="text">
+    <string>Cascade</string>
+   </property>
+  </action>
+  <action name="actionTitles">
+   <property name="text">
+    <string>Titles</string>
+   </property>
+  </action>
+  <action name="actionFileOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/open.png</normaloff>../images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionFileClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionFileTreeViewShow">
+   <property name="text">
+    <string>FileView</string>
+   </property>
+  </action>
+  <action name="actionBuilderShow">
+   <property name="text">
+    <string>Builder</string>
+   </property>
+  </action>
+  <action name="actionbuild_Molecular_Orbital">
+   <property name="text">
+    <string>Molecular Orbital</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/new.png</normaloff>../images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionSave_PNG">
+   <property name="text">
+    <string>Save PNG</string>
+   </property>
+  </action>
+  <action name="actionChangeColor">
+   <property name="text">
+    <string>ChangeColor</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FileTree</class>
+   <extends>QTreeWidget</extends>
+   <header>FileTree.h</header>
+  </customwidget>
+  <customwidget>
+   <class>RadialFunViewer</class>
+   <extends>QWidget</extends>
+   <header>RadialFunViewer.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

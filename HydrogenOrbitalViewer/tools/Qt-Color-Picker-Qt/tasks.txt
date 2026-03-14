@@ -1,0 +1,28 @@
+
+- press mid button on text to select all or to select group
+- [hex] inc/dec each hex digit (not group)
+- saturation/value pointers on the sides of selector
+- show half of hue trapezoid when in the top/bottom max position (when it is partially hidden)
+- trim, remove \s+ after validation (when all comps are valid)
+*- text fields scroll
+*- text with commas (process, copy)
+- add swatches/color combo box (list)
+- hint (value) on slider/selector hover
+*- ctrl+tab to tab on text fields
+
+# - hold mid button to move on sv selector
+# - copy hex on Sample click
+# - mouse scroll on selectors
+# - validate on up/down, tab/btab
+# - short hex
+# - drag by any point
+# - paste validation
+# - hex ffffff => hue -1
+# - ctrl+scroll to inc/dec by 10 
+
+# - esc
+# - field shortcuts
+# - button shortcuts
+# - change background
+# - draw gradient on hue selector instead of lines
+# - startup window position

@@ -1,0 +1,34 @@
+(1) Adding following code to "Rendering/Core/vtkActor.h" and rebuild
+
+class VTKRENDERINGCORE_EXPORT vtkActor : public vtkProp3D
+{
+int _idMol,  // id of molecule
+    _idMO,   // id of molecular orbital
+    _idAtom,  // id of atom
+    _idBond,  // id of bond
+    _idRing,  // id of ring
+    _idPlane, // id of plane
+    _idUnitCellBox;  //id of Cell box
+
+public:
+    void setMolId  ( int i ) {_idMol=i;}
+    void setMOId   ( int i ) {_idMO=i;}
+    void setAtomId ( int i ) {_idAtom=i;}
+    void setBondId ( int i ) {_idBond=i;}
+    void setRingId ( int i ) {_idRing=i;}
+    void setPlaneId ( int i ) {_idPlane=i;}
+    void setUnitCellBoxId ( int i ) {_idUnitCellBox=i;}
+
+    int  MolId () {return _idMol;}
+    int  MOId ()  {return _idMO;}
+    int  AtomId () {return _idAtom;}
+    int  BondId () {return _idBond;}
+    int  RingId ()  {return _idRing;}
+    int  PlaneId () {return _idPlane;}
+    int  UnitCellBoxId () {return _idUnitCellBox;}
+
+.......
+
+(2) install tools/QtColorWidgets: qmake && make install
+
+    
