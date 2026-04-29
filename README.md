@@ -1,4 +1,6 @@
 Hydrogen atom orbital viewer(氢原子轨道)
+依赖: Qt6.10/VTK9.6
+
 <img width="1920" height="1080" alt="hao-6" src="https://github.com/user-attachments/assets/76e55db0-661e-4abc-b55f-840446799614" />
 <img width="1919" height="1037" alt="hao-5" src="https://github.com/user-attachments/assets/faa9e921-42e9-4749-a1e7-5aac39a72edd" />
 <img width="1920" height="1080" alt="hao-4" src="https://github.com/user-attachments/assets/371c2770-0883-4d58-a601-1addca2cc1eb" />
